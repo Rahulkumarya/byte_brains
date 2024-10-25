@@ -1,0 +1,23 @@
+.cont{
+    text-align: center;
+    padding-top: 1rem;
+}
+.hts{
+    font-size: 20px;
+
+}
+.htm-left{
+    margin-left: 650px;
+    margin-top: 100px;
+}
+.p-link{
+    padding-top: 50px;
+
+}
+.p-links{
+    position: absolute;
+    top:16rem ;
+    left:45rem;
+  
+
+}

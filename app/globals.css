@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -16,6 +16,12 @@
   }
 }
 
+
+
+*{
+  margin-top:0px;
+  margin-bottom: 0px;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -30,4 +36,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

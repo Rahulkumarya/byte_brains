@@ -1,0 +1,19 @@
+.ab{
+    text-align: center;
+}
+.about-main{
+    padding: 2rem 10rem 10rem;
+    line-height: 29px;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    text-align: justify;
+}
+.about-mains{
+    font-size: 20px;
+    /* line-height: 29px; */
+   
+    font-weight: 600;
+    justify-content: center;
+    text-align: justify;
+}

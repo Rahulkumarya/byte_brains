@@ -1,0 +1,36 @@
+.ds-hs{
+    display: grid;
+
+grid-template-columns: .5fr 1fr;
+background-image: url("./map8.png");
+background-position: center;
+background-size: cover;
+height: 100vh;
+opacity: .8;
+
+}
+
+
+.htm-th{
+font-weight: 750;
+grid-column-start: 2;
+text-align: center;
+font-size: 20px;
+margin-left: 25rem;
+}
+.htm-ths{
+    margin-right: 25rem;
+    font-weight: 900;
+    grid-column-start: 2;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    
+
+    }
+    .htmsp{
+        padding-top: -100px;
+        margin-top: 5rem;
+
+    }

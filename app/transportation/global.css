@@ -1,0 +1,130 @@
+.transportation{
+    background-color:  rgb(176, 168, 226);
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1fr;
+    padding: 1rem;
+}
+
+.trans-heading{
+    padding-left: .5rem; 
+    color: #0f0d0d;
+    font-family:Arial, Helvetica, sans-serif;
+   
+
+}
+
+.right-trans{
+    grid-column-start: 3;
+    gap: 100px;
+    justify-content: space-between;
+
+}
+.logo-noti{
+    padding-right: 7rem;
+    padding-left: 2rem;
+    display: inline;
+}
+
+
+
+
+
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 200px;
+    border-radius: .2rem;
+  }
+  
+  .category-select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: .2rem;
+  }
+  
+  .search-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .4rem;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  .trans-right{
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    
+    
+  }
+  .side-right{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgba(28, 11, 39, 0.726);
+    height: 100vh;
+    border-top: 2px solid rgb(255,255,255);
+  }
+
+  .trans-logo-right{
+    color: beige;
+    padding-top: .8rem;
+    padding-left: 1rem;
+    padding-bottom:1rem;
+    border-bottom: 2px solid rgb(255,255,255);
+  }
+
+  .tns-btn{
+    align-items: center;
+    padding-bottom: 200px;
+    padding-left: 20px;
+
+  }
+
+  .sec-right{
+    background-image: url("./map4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    padding-top: 1rem;
+    border-bottom:10px solid rgb(97, 93, 93) ;
+
+
+  }
+  .sec-ht{
+   
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  gap: .1rem;
+ 
+  }
+
+  .sec-bot{
+    background-image: url("./map3.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+.h{
+  z-index: 1000;
+  text-align: left;
+  color: #272727;
+  padding-top: .5rem;
+  padding-left: .5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  
+}

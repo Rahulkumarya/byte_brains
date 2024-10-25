@@ -1,0 +1,289 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.home-banner{
+  background-image: url("./img/home1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60rem;
+  opacity: .7;
+  background-repeat: no-repeat;
+  /* overflow: hidden; */
+  overflow-y: hidden;
+}
+
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr .5fr;
+  background-image: url("./img/home1.jpg");
+  height: 100vh;
+
+  
+}
+
+.nav-links{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding-top: 50px;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration-line: none;
+  
+}
+
+.nav-links li a{
+  text-decoration-line: none;
+}
+
+
+
+
+.user-icon{
+  display: flex;
+  /* align-items: center; */
+  padding-top: 45px;
+  padding-left:3rem ;
+}
+
+
+
+.nav-links :hover{
+color: brown;
+}
+
+.logo{
+ padding-top: 1rem;
+ cursor: pointer;
+ padding-left: 1rem;
+
+}
+.logo :hover{
+ 
+  color: blue;
+  
+}
+
+
+
+
+
+.main-solu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: rgb(131, 131, 131);
+  list-style: none;
+  padding: 1rem;
+  z-index: 1000;
+  left: 30rem;
+  right: 10rem;
+  border-radius: 1rem;
+  /* Control the height to avoid accidental scrollbars */
+  max-height: 400px; /* Adjust as needed */
+  
+  overflow: hidden; 
+  box-sizing: border-box;/* Ensure no overflow */
+}
+
+.nav-solu:hover + .main-solu,
+.main-solu:hover {
+  display: flex; /* Keep showing the section on hover */
+  justify-content: space-between;
+
+}
+
+.main-solu li {
+  margin-right: 4rem;
+}
+
+.main-solu li a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.main-solu li a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+.solu-logo{
+  text-align: center;
+  color:rgb(255, 255,255);
+
+}
+
+.user-icon{
+  position: relative;
+}
+
+.inside-user{
+  position:absolute;
+  top: 5rem;
+  /* height: 4rem; */
+background-color: aquamarine;
+overflow-y: hidden;
+
+  
+}
+
+.user-btn{
+  margin-bottom: .4rem;
+  
+  
+}
+
+
+
+.nav-solus{
+  cursor: pointer;
+}
+
+
+
+
+
+.user-icon {
+  position: relative;
+}
+
+.user-menu {
+  display: none;
+  position: absolute;
+  top: 2.4rem; /* Adjust depending on the size */
+  right: 20px;
+  background-color: white;
+  border: .2px solid #ccc;
+  padding: 4px;
+  list-style: none;
+  z-index: 1000;
+  
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.user-icon:hover .user-menu {
+  display: block;
+}
+
+.user-menu li {
+  padding: 5px 10px;
+}
+
+.user-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.home-cen{
+  
+  padding-bottom: 50%;
+  padding-left: 1.9rem;
+ 
+  
+}
+
+
+.home-he{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(204, 127, 25);
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  gap: 2rem;
+  background-color: #f0f0f0;
+  padding: 1.5rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdown-item a {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item a:hover {
+  text-decoration: underline;
+}
+
+.user-icon {
+  justify-self: end;
+}
+*/
