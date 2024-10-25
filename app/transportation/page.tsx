@@ -21,21 +21,21 @@ function page() {
     const [selectedCategory, setSelectedCategory] = useState("");
   
     // Handle search input change
-    const handleInputChange = (e) => {
-      setSearchInput(e.target.value);
-    };
+    // const handleInputChange = (e) => {
+    //   setSearchInput(e.target.value);
+    // };
   
     // Handle category selection change
-    const handleCategoryChange = (e) => {
-      setSelectedCategory(e.target.value);
-    };
+    // const handleCategoryChange = (e) => {
+    //   setSelectedCategory(e.target.value);
+    // };
   
     // Handle search button click
-    const handleSearch = () => {
-      console.log(`Search Query: ${searchInput}`);
-      console.log(`Selected Category: ${selectedCategory}`);
-      // Add your search logic here
-    };
+    // const handleSearch = () => {
+    //   console.log(`Search Query: ${searchInput}`);
+    //   console.log(`Selected Category: ${selectedCategory}`);
+    //   // Add your search logic here
+    // };
   return (
     <>
     <div className='transportation'>
@@ -52,13 +52,13 @@ function page() {
         type="text"
         placeholder="Search here..."
         value={searchInput}
-        onChange={handleInputChange}
+        // onChange={handleInputChange}
         className="search-input"
       />
 
       <select
         value={selectedCategory}
-        onChange={handleCategoryChange}
+        // onChange={handleCategoryChange}
         className="category-select"
       >
         <option value="">Select Category</option>
@@ -67,7 +67,7 @@ function page() {
         <option value="category3">Category 3</option>
       </select>
 
-      <button onClick={handleSearch} className="search-button">
+      <button  className="search-button">
         Search
       </button>
 

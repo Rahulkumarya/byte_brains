@@ -12,12 +12,12 @@ const Signup = () => {
     confirmPassword: "",
   });
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleChange = () => {
+    // setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+    // e.preventDefault();
 
     // Validate form data
     if (!formData.name || !formData.email || !formData.password || !formData.confirmPassword) {

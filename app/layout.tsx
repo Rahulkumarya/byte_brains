@@ -7,7 +7,7 @@ import "./styles/Main.css"
 import "./styles/Footer.css"
 import { ImOpt } from "react-icons/im";
 import Navbar from './Navbar'
-import Head from "./head"
+
 
 
 

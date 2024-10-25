@@ -242,22 +242,138 @@
 
 
 
+// "use client";
+// import React, { useState } from "react";
+// import Image from "next/image";
+// import byte_brains from "./styles/img/byte_brains.png";
+// import { FaUserCircle } from "react-icons/fa";
+// import Link from "next/link";
+// // import Signup from "./components/Signup"; // Import Signup component
+// // import Login from "./components/Login";   // Import Login component
+// import Signup from "./components/auth/Signup"
+// import Login from "./components/auth/Login"
+// import { MdLocalShipping, MdOutlinePublic, MdOutlineStoreMallDirectory } from "react-icons/md";
+
+// const Navbar = () => {
+//   const [activeComponent, setActiveComponent] = useState(null); // State to control component rendering
+
+//   const handleComponentRender = (component: string | React.SetStateAction<null>) => {
+//     setActiveComponent(component);
+//   };
+
+//   return (
+//     <div>
+//       {/* Navbar */}
+//       <div className="navbar">
+//         <div className="logo">
+//           <a href="/">
+//             <Image src={byte_brains} alt="Logo" width={300} height={100} />
+//           </a>
+//         </div>
+//         <ul className="nav-links">
+//           <li><Link href={"/"}>Home</Link></li>
+//           <li>
+//             <a className="nav-solu">Solutions</a>
+//             <ul className="main-solu">
+//               <li>
+//               <p className="solu-logo"><MdOutlineStoreMallDirectory size={50} /></p>
+//                 <Link href="/order">
+
+//                 Order Management</Link>
+//               </li>
+//               <li>
+//                 <Link href="/distribution">
+//                 <p className="solu-logo"><MdLocalShipping size={50} /></p>
+//                 Distribution & Fulfillment</Link>
+//               </li>
+//               <li>
+//                 <Link href="/transportation">
+//                 <p className="solu-logo"><MdOutlinePublic size={50} /></p>Transportation</Link>
+//               </li>
+//             </ul>
+//           </li>
+//           <li><Link href="/about">About Us</Link></li>
+//           <li><Link href={"/contact"}>Contact Us</Link></li>
+//         </ul>
+
+//         {/* User Icon Dropdown */}
+//         <div className="user-icon">
+//           <a className="nav-user"><FaUserCircle size={35} /></a>
+//           <ul className="user-menu">
+//             <li onClick={() => handleComponentRender("signup")}>
+//               Signup
+//             </li>
+//             <li onClick={() => handleComponentRender("login")}>
+//               Login
+//             </li>
+//           </ul>
+
+//         </div>
+//         <div className="home-cen">
+// <span className="home-he">Logistic Operation ULIP</span>
+//       </div>
+//       </div>
+     
+
+//       {/* Render Signup or Login based on the state */}
+//       <div className="auth-container">
+//         {activeComponent === "signup" && <Signup />}
+//         {activeComponent === "login" && <Login />}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
 import byte_brains from "./styles/img/byte_brains.png";
 import { FaUserCircle } from "react-icons/fa";
 import Link from "next/link";
-// import Signup from "./components/Signup"; // Import Signup component
-// import Login from "./components/Login";   // Import Login component
-import Signup from "./components/auth/Signup"
-import Login from "./components/auth/Login"
+import Signup from "./components/auth/Signup";
+import Login from "./components/auth/Login";
 import { MdLocalShipping, MdOutlinePublic, MdOutlineStoreMallDirectory } from "react-icons/md";
 
-const Divbar = () => {
-  const [activeComponent, setActiveComponent] = useState(null); // State to control component rendering
+const Navbar = () => {
+  const [activeComponent, setActiveComponent] = useState<string | null>(null);
 
-  const handleComponentRender = (component: string | React.SetStateAction<null>) => {
+  const handleComponentRender = (component: string | null) => {
     setActiveComponent(component);
   };
 
@@ -271,51 +387,48 @@ const Divbar = () => {
           </a>
         </div>
         <ul className="nav-links">
-          <li><Link href={"/"}>Home</Link></li>
+          <li><Link href="/">Home</Link></li>
           <li>
             <a className="nav-solu">Solutions</a>
             <ul className="main-solu">
               <li>
-              <p className="solu-logo"><MdOutlineStoreMallDirectory size={50} /></p>
                 <Link href="/order">
-
-                Order Management</Link>
+                  <p className="solu-logo"><MdOutlineStoreMallDirectory size={50} /></p>
+                  Order Management
+                </Link>
               </li>
               <li>
                 <Link href="/distribution">
-                <p className="solu-logo"><MdLocalShipping size={50} /></p>
-                Distribution & Fulfillment</Link>
+                  <p className="solu-logo"><MdLocalShipping size={50} /></p>
+                  Distribution & Fulfillment
+                </Link>
               </li>
               <li>
                 <Link href="/transportation">
-                <p className="solu-logo"><MdOutlinePublic size={50} /></p>Transportation</Link>
+                  <p className="solu-logo"><MdOutlinePublic size={50} /></p>
+                  Transportation
+                </Link>
               </li>
             </ul>
           </li>
           <li><Link href="/about">About Us</Link></li>
-          <li><Link href={"/contact"}>Contact Us</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
         </ul>
 
         {/* User Icon Dropdown */}
         <div className="user-icon">
           <a className="nav-user"><FaUserCircle size={35} /></a>
           <ul className="user-menu">
-            <li onClick={() => handleComponentRender("signup")}>
-              Signup
-            </li>
-            <li onClick={() => handleComponentRender("login")}>
-              Login
-            </li>
+            <li onClick={() => handleComponentRender("signup")}>Signup</li>
+            <li onClick={() => handleComponentRender("login")}>Login</li>
           </ul>
-
         </div>
         <div className="home-cen">
-<span className="home-he">Logistic Operation ULIP</span>
+          <span className="home-he">Logistic Operation ULIP</span>
+        </div>
       </div>
-      </div>
-     
 
-      {/* Render Signup or Login based on the state */}
+      {/* Render Signup or Login component based on state */}
       <div className="auth-container">
         {activeComponent === "signup" && <Signup />}
         {activeComponent === "login" && <Login />}
@@ -324,4 +437,4 @@ const Divbar = () => {
   );
 };
 
-export default Divbar;
+export default Navbar;
